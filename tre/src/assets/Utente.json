@@ -1,0 +1,24 @@
+{
+  "Utenti": [
+    {
+      "id": 1,
+      "nome": "Nome dal Json",
+      "citta": "Città dal Json"
+    },
+    {
+      "id": 2,
+      "nome": "Nome2 dal Json",
+      "citta": "Città2 dal Json"
+    },
+    {
+      "id": 3,
+      "nome": "Nome3 dal Json",
+      "citta": "Città3 dal Json"
+    },
+    {
+      "id": 4,
+      "nome": "Nome3 dal Json",
+      "citta": "Città3 dal Json"
+    }
+  ]
+}

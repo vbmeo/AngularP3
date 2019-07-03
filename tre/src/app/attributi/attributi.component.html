@@ -1,0 +1,37 @@
+
+<!--   [attr.text-anchor]="start"-->
+Ciò che segue viene modellato nello stile da codice usando [ngStyle]"
+<br>
+<p    [ngStyle]="setMyStyles()">
+      <!--  [attr.font-family]="'Helvetica'" -->
+      <!--  [attr.fill]="'#777'"-->
+       hgjghjghjff
+</p>
+Ciò che segue viene modellato nello stile da codice senza variabili usando [ngStyle]"
+<br>
+<p    [ngStyle]="setMyStyles2()">
+      <!--  [attr.font-family]="'Helvetica'" -->
+      <!--  [attr.fill]="'#777'"-->
+       hgjghjghjff
+</p>
+la scritta che segue cambia dimensioni a seconda del valore della variabile
+
+<p [style.font-size.px]="isImportant ? '30' : '16'" #scrittaCheCambia>
+  {{scritta}}
+</p>
+<button  class="btn btn-primary" #bottoneCambiaScritta  type="button" name="button" (click)="cambiaScritta()">{{titoloBottone}}</button>
+<button  class="btn btn-primary" (click)="show(bottoneCambiaScritta)">Passa il DOM e logga risultato, e poi cambia scritta al bottone tramite DOM </button>
+
+<br>Sfondo che segue definito da una stringa non una variabile
+<p [style.background-color]="'darkorchid'">
+  Quite something!
+</p>
+
+Sfondo che segue definito da una variabile
+<button  class="btn btn-primary"  type="button" name="button" (click)="cambiaSfondo()">Cambia a rosso</button>
+<p [style.background-color]="sfondoDue">
+  Quite something!
+</p>
+
+<!--Uso di attr.checked-->
+<input type="checkbox" name="vehicle1" value="Bike" [attr.checked]="!isImportant ? 'checked' : null"> I have a bike<br>
